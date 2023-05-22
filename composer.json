@@ -1,5 +1,5 @@
 {
-   "name":"dune/routing",
+   "name":"dune/console",
    "description":"Dune Framework Cli",
    "type":"library",
    "license":"MIT",
