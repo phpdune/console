@@ -75,10 +75,10 @@ class DevelopmentServer extends Command
     }
     /**
      * open the development server in the browser
-     * 
+     *
      * @param string $host
      * @param string $port
-     * 
+     *
      */
     private function openUrl(string $host, string $port): void
     {
@@ -91,9 +91,7 @@ class DevelopmentServer extends Command
         } else {
             $cmd = "xdg-open";
         }
-        if (!empty($cmd)) {
-            $fullCmd = $cmd . " http://" . $host . ":" . $port;
-            shell_exec($fullCmd);
-        }
+        $fullCmd = $cmd . " http://" . $host . ":" . $port;
+        shell_exec($fullCmd);
     }
 }
